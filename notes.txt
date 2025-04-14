@@ -1,0 +1,130 @@
+Episode 1 :
+1. see for cross origin attribute used
+2. what is CDN. Its prios and cons
+
+Episode 2:
+1. What is difference btween git and github?
+2. 
+
+Package.json is configration for npm.
+
+npm is a package manager
+
+most important package for our project is bundler. Bundler packages your app to ship it to production. like html css js files are bundled together. eg of bundlers at=re webpack, parcel etc. We will use parcel bundler. Its relatively easy to bundled.
+we install this package through npm.
+
+we will use command npm install -D parcel
+there re 2 types of dependency:
+dev dependeny and web dependency.
+dev one is used fro development while web is used while in production. Read more about it.
+_D stands for dev dependency
+
+
+Read about caret ~ and tilde. interview question. Why it is safe to use it
+
+what is the difference between package.json and package-lock.json
+
+what is integrity in pack-lock.json. 
+Package-lock  ->  keeps track of all the versions.
+
+
+parcel as a project as its own dependecies and those dependencies will have their own dependecies hence so many things get installed along with parcle in node modules. This is called transitive dependecies.
+
+
+Every package(module), every dependecny has its own package.json. every module's package has its dependencies mentioned in its own package.json
+
+Should we push mode modules to prod or git?   No , we should never do that. Best practice is to put this in git ignore file by defining it in git ignore file. 
+
+We should put package.json and package-lock.json on git bcz:-
+
+If we have package.json and package-lock.json then we can regenerate our node modules again. try deleting node modules , you can again do npm install and then you will again get node modules. so not imp to push node modules to github bcz both package files will generate them.
+
+
+Basically:  whatever we can regenerate we should not put on git. This is imp to remember.
+
+npx parcel index.html ---->  Just like npm we have npx. 
+when we do npm we are calling the cpmmand to install
+npx means - executing the packages. here we executed package parcel.
+
+so this commmand build as development host for us.
+
+
+
+
+CDN cons of using here:- fetching from CDN is a costly affair. we do not want to make another network call so better installl. as the version upgrades we willl have to update the URLs. so better have a installed package for 
+
+
+Parcel uses file watching Algorithm written in C++. As soon as we make any change in file and save, build is automaically refreshed and page refreshes. Read HMR
+
+Parcel uses caches. It do caching in the parce-cache file.hemnce everytime for the susequent builds the time is less. It does all this by HMR
+
+Parcel also does Image optmization.
+
+for production build- it also minifies and bundling of files. Basically parcel is a bundler.
+
+Parcel also compresses the file hence reducing the sizes. Removes all whitespaces.
+
+Parcel does Consisten hashing - Read about this
+
+Parcel does code splitting for you
+
+Parcel does differential bundling - to support older browsers.
+
+https://parceljs.org/ - read it
+
+
+
+
+dist folder: when we do npx parcel then this folder is created. read about this 
+
+npm run start is equal to npm start
+npm run build
+
+
+React and JSX is different. React can build apps without JSX but JSX makes easy.
+
+JSX is not HTML in JS. JSX, React and HTML are different
+Can be said JSX look alike HTML or XML like syntax.
+
+const jsxHeading = <h1 id="jsxheading">Namaste React using JSX 🚀</h1> 
+// this is not valid js code as js engine only understands to ecma script. in this case JSX code is transpiled(converted to n=browser understanble code) before it reached JS engine. this transpilation is done by PARCEL(Acts as a manager)but by BABEL(babel is a transpiler which converts JSX to JS code).
+
+// JSX is a syntax extension for JavaScript that looks similar to XML or HTML. It allows you to write HTML-like code within JavaScript, making it easier to create and manage UI components in React applications.
+
+// JSX is not valid JavaScript, so it needs to be transpiled into JavaScript code that the browser can understand. This is typically done using tools like Babel during the build process of a React application.
+
+// JSX is not a requirement for React, but it is widely used because it makes the code more readable and easier to understand. It allows developers to describe the structure of the UI in a declarative way, which can lead to cleaner and more maintainable code.
+
+// JSX is a syntax extension for JavaScript that allows you to write HTML-like code within your JavaScript files. It is commonly used with React to describe the structure and appearance of user interfaces. JSX makes it easier to create and manage UI components by allowing you to write HTML-like syntax directly in your JavaScript code.
+// JSX allows you to write HTML-like syntax directly in your JavaScript code, making it easier to create and manage UI components. It is a syntax extension for JavaScript that is commonly used with React.
+
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
+
+//try this code in babel.js ===> https://babeljs.io/repl
+// React.createElement is used to create React elements.
+// React.createElement( type, props, children )
+
+//babel.js is a JavaScript compiler that allows you to use next generation JavaScript, today.
+//babel does alot of things:    
+//1. Converts JSX to JavaScript
+//2. Converts ES6 to ES5
+//3. Converts ESNext to ES6
+//4. Converts TypeScript to JavaScript
+//5. Converts Flow to JavaScript
+//6. Converts TypeScript to Flow
+//7. Converts Flow to TypeScript
+//8. Converts JSX to HTML
+
+
+
+
+// JSX is a syntax extension that looks similar to XML or HTML.
+//try this code in babel.js ===> https://babeljs.io/repl
+
+//Parcel is like manager of babel.
+
+
+//React component
+//1.Class component - old way
+//2.Functional component - new way -n A funtion which returns a piece of JSX is functional component
