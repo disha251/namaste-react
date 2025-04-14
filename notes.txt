@@ -128,3 +128,8 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 //React component
 //1.Class component - old way
 //2.Functional component - new way -n A funtion which returns a piece of JSX is functional component
+
+
+//passing a prop to a component is like passing argumen to a function
+
+//Props - when you to dynamically pass data to componernt  you pass it as a prop. wecan pass any number of props
