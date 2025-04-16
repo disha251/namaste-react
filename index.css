@@ -78,3 +78,21 @@
 .Search{
     padding: 20px;
 }
+
+.filter-btn{
+    width: 100px;
+    height: 40px;
+    border: 1px solid #000;
+    background-color: #000;
+    color: #fff; 
+    font-size: 16px;
+    cursor: pointer;
+    &:hover{
+        background-color: #fff;
+        color: #000;
+        border: 1px solid #000;
+    }
+    margin: 10px;
+    border-radius: 5px;
+    font-weight: 600;
+}

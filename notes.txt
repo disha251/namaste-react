@@ -133,3 +133,15 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 //passing a prop to a component is like passing argumen to a function
 
 //Props - when you to dynamically pass data to componernt  you pass it as a prop. wecan pass any number of props
+
+config driven UI - your UI is driven by config. latest practice every company uses. config is data. 
+
+
+.js an d.jsx extensions are same..just different way of writtingf and creating files
+
+
+
+# React Hooks
+(Normal Utility Js functions)
+- useState() - superpowerful state variable in  react
+- useEffect()
